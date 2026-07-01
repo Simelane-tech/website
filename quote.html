@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Oswald:wght=700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="utilities.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -59,30 +61,46 @@
                 <img src="src/bentoks_logo.png" alt="Bentoks Investments Logo" class="h-20 w-auto" />
             </a>
             <div class="hidden lg:flex items-center gap-7">
-                <a href="index.html" class="text-[#003399] text-sm tracking-wide transition-colors">Home</a>
+                <a href="index.html" class="text-[#1A202C]/70 hover:text-[#003399] text-sm tracking-wide transition-colors">Home</a>
                 <a href="about.html" class="text-[#1A202C]/70 hover:text-[#003399] text-sm tracking-wide transition-colors">About</a>
                 <div class="relative group">
                     <a href="services.html" class="text-[#1A202C]/70 hover:text-[#003399] text-sm tracking-wide transition-colors flex items-center gap-1">Services <span class="material-icons icon-sm opacity-60">expand_more</span></a>
                     <div class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-60 bg-[#FFFFFF] border border-[#003399]/10 shadow-2xl shadow-black/10 py-2 z-50 hidden group-hover:block">
-                        <a href="services.html" class="w-full flex items-center gap-3 px-4 py-2.5 text-left hover:bg-[#F5F7FA] transition-colors group">
-                            <span class="material-icons text-[#CC0000]/50 group-hover:text-[#CC0000]">business_center</span>
-                            <span class="text-xs text-[#1A202C]/50 group-hover:text-[#1A202C]/80">Corporate Branding</span>
+                        <a href="services.html#T-Shirt" class="w-full flex items-center gap-3 px-4 py-2.5 text-left hover:bg-[#F5F7FA] transition-colors group">
+                            <span class="material-icons text-[#CC0000]/50 group-hover:text-[#CC0000]">checkroom</span>
+                            <span class="text-xs text-[#1A202C]/50 group-hover:text-[#1A202C]/80">T-Shirt Printing</span>
                         </a>
-                        <a href="services.html" class="w-full flex items-center gap-3 px-4 py-2.5 text-left hover:bg-[#F5F7FA] transition-colors group">
+                        <a href="services.html#Banners" class="w-full flex items-center gap-3 px-4 py-2.5 text-left hover:bg-[#F5F7FA] transition-colors group">
+                            <span class="material-icons text-[#CC0000]/50 group-hover:text-[#CC0000]">flag</span>
+                            <span class="text-xs text-[#1A202C]/50 group-hover:text-[#1A202C]/80">Banners & Posters</span>
+                        </a>
+                        <a href="services.html#Billboards" class="w-full flex items-center gap-3 px-4 py-2.5 text-left hover:bg-[#F5F7FA] transition-colors group">
+                            <span class="material-icons text-[#CC0000]/50 group-hover:text-[#CC0000]">campaign</span>
+                            <span class="text-xs text-[#1A202C]/50 group-hover:text-[#1A202C]/80">Billboards Printing</span>
+                        </a>
+                        <a href="services.html#Custom" class="w-full flex items-center gap-3 px-4 py-2.5 text-left hover:bg-[#F5F7FA] transition-colors group">
+                            <span class="material-icons text-[#CC0000]/50 group-hover:text-[#CC0000]">palette</span>
+                            <span class="text-xs text-[#1A202C]/50 group-hover:text-[#1A202C]/80">Custom Designs</span>
+                        </a>
+                        <a href="services.html#Vehicle" class="w-full flex items-center gap-3 px-4 py-2.5 text-left hover:bg-[#F5F7FA] transition-colors group">
                             <span class="material-icons text-[#CC0000]/50 group-hover:text-[#CC0000]">directions_car</span>
                             <span class="text-xs text-[#1A202C]/50 group-hover:text-[#1A202C]/80">Vehicle Branding</span>
                         </a>
-                        <a href="services.html" class="w-full flex items-center gap-3 px-4 py-2.5 text-left hover:bg-[#F5F7FA] transition-colors group">
-                            <span class="material-icons text-[#CC0000]/50 group-hover:text-[#CC0000]">signpost</span>
-                            <span class="text-xs text-[#1A202C]/50 group-hover:text-[#1A202C]/80">Signage Solutions</span>
+                        <a href="services.html#Signage" class="w-full flex items-center gap-3 px-4 py-2.5 text-left hover:bg-[#F5F7FA] transition-colors group">
+                            <span class="material-icons text-[#CC0000]/50 group-hover:text-[#CC0000]">storefront</span>
+                            <span class="text-xs text-[#1A202C]/50 group-hover:text-[#1A202C]/80">Signage</span>
                         </a>
-                        <a href="services.html" class="w-full flex items-center gap-3 px-4 py-2.5 text-left hover:bg-[#F5F7FA] transition-colors group">
-                            <span class="material-icons text-[#CC0000]/50 group-hover:text-[#CC0000]">photo_library</span>
-                            <span class="text-xs text-[#1A202C]/50 group-hover:text-[#1A202C]/80">Exhibition Stands</span>
+                        <a href="services.html#Flyers" class="w-full flex items-center gap-3 px-4 py-2.5 text-left hover:bg-[#F5F7FA] transition-colors group">
+                            <span class="material-icons text-[#CC0000]/50 group-hover:text-[#CC0000]">description</span>
+                            <span class="text-xs text-[#1A202C]/50 group-hover:text-[#1A202C]/80">Flyers & Advertising Prints</span>
                         </a>
-                        <a href="services.html" class="w-full flex items-center gap-3 px-4 py-2.5 text-left hover:bg-[#F5F7FA] transition-colors group">
-                            <span class="material-icons text-[#CC0000]/50 group-hover:text-[#CC0000]">card_giftcard</span>
-                            <span class="text-xs text-[#1A202C]/50 group-hover:text-[#1A202C]/80">Corporate Gifts</span>
+                        <a href="services.html#Business" class="w-full flex items-center gap-3 px-4 py-2.5 text-left hover:bg-[#F5F7FA] transition-colors group">
+                            <span class="material-icons text-[#CC0000]/50 group-hover:text-[#CC0000]">badge</span>
+                            <span class="text-xs text-[#1A202C]/50 group-hover:text-[#1A202C]/80">Business Cards</span>
+                        </a>
+                        <a href="services.html#Brochures" class="w-full flex items-center gap-3 px-4 py-2.5 text-left hover:bg-[#F5F7FA] transition-colors group">
+                            <span class="material-icons text-[#CC0000]/50 group-hover:text-[#CC0000]">menu_book</span>
+                            <span class="text-xs text-[#1A202C]/50 group-hover:text-[#1A202C]/80">Brochures</span>
                         </a>
                     </div>
                 </div>
@@ -100,7 +118,7 @@
             </button>
         </nav>
         <div id="mobile-menu" class="lg:hidden bg-[#FFFFFF] border-t border-[#003399]/8 hidden">
-            <a href="index.html" class="w-full text-left px-6 py-4 text-sm border-b border-[#003399]/5 transition-colors text-[#003399] block">Home</a>
+            <a href="index.html" class="w-full text-left px-6 py-4 text-sm border-b border-[#003399]/5 transition-colors text-[#1A202C]/70 block">Home</a>
             <a href="about.html" class="w-full text-left px-6 py-4 text-sm border-b border-[#003399]/5 transition-colors text-[#1A202C]/70 block">About</a>
             <a href="services.html" class="w-full text-left px-6 py-4 text-sm border-b border-[#003399]/5 transition-colors text-[#1A202C]/70 block">Services</a>
             <a href="portfolio.html" class="w-full text-left px-6 py-4 text-sm border-b border-[#003399]/5 transition-colors text-[#1A202C]/70 block">Portfolio</a>
@@ -190,7 +208,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
                 <div>
                     <a href="index.html" class="flex items-center gap-3 mb-6">
-                        <img src="src/bentoks_logo.png" alt="Bentoks Investments Logo" class="h-20 w-auto">
+                        <img src="src/bentoks_logo.png" alt="Bentoks Investments Logo" class="h-20 w-auto" />
                     </a>
                     <p class="text-white/35 text-xs leading-relaxed mb-6">High-quality printing that brings your brand to life. We specialize in billboards, banners, t-shirts, and custom prints for businesses and individuals since 2017.</p>
                     <div class="flex gap-2">
@@ -219,11 +237,15 @@
                 <div>
                     <h4 class="font-heading text-white font-semibold text-sm tracking-[0.1em] mb-5">SERVICES</h4>
                     <ul class="space-y-2.5">
-                        <li><a href="services.html" class="text-white/35 hover:text-white text-xs transition-colors text-left leading-relaxed">T-Shirt Printing</a></li>
-                        <li><a href="services.html" class="text-white/35 hover:text-white text-xs transition-colors text-left leading-relaxed">Banners & Posters</a></li>
-                        <li><a href="services.html" class="text-white/35 hover:text-white text-xs transition-colors text-left leading-relaxed">Billboards Printing</a></li>
-                        <li><a href="services.html" class="text-white/35 hover:text-white text-xs transition-colors text-left leading-relaxed">Custom Designs</a></li>
-                        <li><a href="services.html" class="text-white/35 hover:text-white text-xs transition-colors text-left leading-relaxed">Vehicle Branding</a></li>
+                        <li><a href="services.html#T-Shirt" class="text-white/35 hover:text-white text-xs transition-colors text-left leading-relaxed">T-Shirt Printing</a></li>
+                        <li><a href="services.html#Banners" class="text-white/35 hover:text-white text-xs transition-colors text-left leading-relaxed">Banners & Posters</a></li>
+                        <li><a href="services.html#Billboards" class="text-white/35 hover:text-white text-xs transition-colors text-left leading-relaxed">Billboards Printing</a></li>
+                        <li><a href="services.html#Custom" class="text-white/35 hover:text-white text-xs transition-colors text-left leading-relaxed">Custom Designs</a></li>
+                        <li><a href="services.html#Vehicle" class="text-white/35 hover:text-white text-xs transition-colors text-left leading-relaxed">Vehicle Branding</a></li>
+                        <li><a href="services.html#Signage" class="text-white/35 hover:text-white text-xs transition-colors text-left leading-relaxed">Signage</a></li>
+                        <li><a href="services.html#Flyers" class="text-white/35 hover:text-white text-xs transition-colors text-left leading-relaxed">Flyers & Advertising Prints</a></li>
+                        <li><a href="services.html#Business" class="text-white/35 hover:text-white text-xs transition-colors text-left leading-relaxed">Business Cards</a></li>
+                        <li><a href="services.html#Brochures" class="text-white/35 hover:text-white text-xs transition-colors text-left leading-relaxed">Brochures</a></li>
                     </ul>
                 </div>
                 <div>
@@ -237,22 +259,22 @@
                     </ul>
                     <h4 class="font-heading text-white font-semibold text-sm tracking-[0.1em] mb-4">CONTACT</h4>
                     <div class="space-y-2.5">
-                        <div class="flex items-start gap-2 text-white/35 text-xs"><span class="material-icons text-white flex-shrink-0 mt-0.5 text-lg">location_on</span>Mbabane, Sidwashini Ind.site, Zenkosi Complex, Block A, Office A2</div>
-                        <div class="flex items-center gap-2 text-white/35 text-xs"><span class="material-icons text-white flex-shrink-0 text-lg">phone</span>+268 7632 0436 / +268 7932 0436 / +268 7804 9351</div>
-                        <div class="flex items-center gap-2 text-white/35 text-xs"><span class="material-icons text-white flex-shrink-0 text-lg">mail</span>ntokozographics@gmail.com / bentoksinvestments@gmail.com</div>
-                        <div class="flex items-start gap-2 text-white/35 text-xs"><span class="material-icons text-white flex-shrink-0 mt-0.5 text-lg">mail</span>P.O. Box 8740, Mbabane H100, Eswatini</div>
+                        <div class="flex items-start gap-2 text-white/35 text-xs"><span class="material-icons text-white flex-shrink-0 mt-0.5">location_on</span>Mbabane, Sidwashini Ind.site, Zenkosi Complex, Block A, Office A2</div>
+                        <div class="flex items-center gap-2 text-white/35 text-xs"><span class="material-icons text-white flex-shrink-0">phone</span>+268 7632 0436 / +268 7932 0436 / +268 7804 9351</div>
+                        <div class="flex items-center gap-2 text-white/35 text-xs"><span class="material-icons text-white flex-shrink-0">mail</span>ntokozographics@gmail.com / bentoksinvestments@gmail.com</div>
+                        <div class="flex items-start gap-2 text-white/35 text-xs"><span class="material-icons text-white flex-shrink-0 mt-0.5">mail</span>P.O. Box 8740, Mbabane H100, Eswatini</div>
                     </div>
                 </div>
                 <div>
                     <h4 class="font-heading text-white font-semibold text-sm tracking-[0.1em] mb-5">NEWSLETTER</h4>
                     <p class="text-white/35 text-xs leading-relaxed mb-4">Latest branding trends delivered to your inbox.</p>
                     <form onsubmit="event.preventDefault(); document.getElementById('newsletter-success').classList.remove('hidden'); this.classList.add('hidden');" class="space-y-2">
-                        <input type="email" required placeholder="Your email" class="w-full bg-white/10 border border-white/20 text-white placeholder-white/40 text-xs px-3 py-2.5 outline-none focus:border-white/50 transition-colors">
+                        <input type="email" required placeholder="Your email" class="w-full bg-white/10 border border-white/20 text-white placeholder-white/40 text-xs px-3 py-2.5 outline-none focus:border-white/50 transition-colors" />
                         <button type="submit" class="w-full bg-[#CC0000] hover:bg-[#DD0000] text-white font-heading font-semibold text-xs tracking-[0.15em] uppercase py-2.5 transition-colors flex items-center justify-center gap-1.5">
-                            <span class="material-icons text-sm">mail</span> Subscribe
+                            <span class="material-icons">mail</span> Subscribe
                         </button>
                     </form>
-                    <div id="newsletter-success" class="flex items-center gap-2 text-white text-xs hidden"><span class="material-icons text-sm">check_circle</span> Subscribed — thank you!</div>
+                    <div id="newsletter-success" class="flex items-center gap-2 text-white text-xs hidden"><span class="material-icons">check_circle</span> Subscribed — thank you!</div>
                     <div class="mt-8">
                         <h4 class="font-heading text-white font-semibold text-sm tracking-[0.1em] mb-3">HOURS</h4>
                         <div class="space-y-1.5 text-xs">
@@ -267,12 +289,10 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/26876320436?text=Hello%20Bentoks%2C%20I%20would%20like%20to%20enquire%20about%20your%20services." target="_blank" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] hover:bg-[#1EBE5D] shadow-xl shadow-[#25D366]/30 flex items-center justify-center transition-all hover:scale-110 group rounded-full">
+    <a href="https://wa.me/26876320436?text=Hello%20Bentoks%2C%20I%20would%20like%20to%20enquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] hover:bg-[#1EBE5D] shadow-xl shadow-[#25D366]/30 flex items-center justify-center transition-all hover:scale-110 group" style="border-radius:50%">
         <span class="material-icons text-white text-2xl">chat</span>
         <div class="absolute right-full mr-3 bg-[#003399] text-white text-xs px-3 py-1.5 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity border border-white/10 shadow-xl pointer-events-none">Chat on WhatsApp</div>
-    </a>
-
-    <script>
+    </a><script>
         function toggleMobileMenu() { 
             const menu = document.getElementById('mobile-menu'); 
             const icon = document.getElementById('menu-icon'); 
@@ -291,7 +311,7 @@
                 const wrapper = document.getElementById('step-' + i + '-wrapper');
                 const line = document.getElementById('step-line-' + i);
                 if (i < step) {
-                    indicator.textContent = 'check_circle';
+                    indicator.innerHTML = '<span class="material-icons text-sm">check</span>';
                     indicator.classList.add('bg-[#003399]', 'border-[#003399]', 'text-white');
                     indicator.classList.remove('border-[#1A202C]/20', 'text-[#1A202C]/30');
                     if (wrapper) wrapper.classList.remove('opacity-50');
@@ -335,10 +355,10 @@
         window.addEventListener('scroll', () => { 
             const navbar = document.getElementById('navbar'); 
             if (window.scrollY > 40) { 
-                navbar.classList.add('bg-[#F5F7FA]/96', 'backdrop-blur-md', 'border-b', 'border-[#003399]/8', 'shadow-2xl', 'shadow-black/10'); 
+                navbar.classList.add('navbar-scrolled'); 
                 navbar.classList.remove('bg-transparent'); 
             } else { 
-                navbar.classList.remove('bg-[#F5F7FA]/96', 'backdrop-blur-md', 'border-b', 'border-[#003399]/8', 'shadow-2xl', 'shadow-black/10'); 
+                navbar.classList.remove('navbar-scrolled'); 
                 navbar.classList.add('bg-transparent'); 
             } 
         });
